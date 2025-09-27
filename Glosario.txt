@@ -1,0 +1,3 @@
+Programa: se compone de una entrada, procesamiento y salida
+Python: Creado por Guido Van Rossum, un lenguaje multiproposito, multiplataforma y multiparadigma (soporta programación orientada a objetos,imperativa,funcional)
+Variables: Lugares de memoria que almacenan datos en la RAM. Las variables tienen tipo,nombre y contenido.
