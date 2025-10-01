@@ -1,0 +1,25 @@
+def DatoValido(NotaTemp):
+    if 1 < NotaTemp < 5:
+        return True
+    else:
+        print("La nota debe estar entre 0 y 5.")
+        return False
+    
+def promedioNotas():
+    Notas = []
+    CantNotas = int(input("Ingrese la cantidad de notas a promediar: "))
+    for i in range(CantNotas):
+        NotaTemp = float(input(f"Ingrese la nota {i+1}: "))
+        while not DatoValido():
+            NotaTemp = float(input(f"Ingrese la nota {i+1} nuevamente: "))
+        Notas.append(NotaTemp)
+    Promedio = sum(Notas) / CantNotas
+    print(f"El promedio de las notas es: {Promedio:.2f}")
+# Programa para calcular el promedio de notas con validación de entrada
+
+if __name__ == "__main__":
+    promedioNotas()
+# Programa para calcular el promedio de notas con validación de entrada
+# Programa para calcular el promedio de notas con validación de entrada
+
+promedioNotas()
