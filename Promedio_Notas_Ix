@@ -1,0 +1,27 @@
+NotaTemp=0
+
+def DatoValido():
+    if NotaTemp<1 or NotaTemp>5:
+        return print("Error: La nota debe estar entre 1 y 5. Intente de nuevo.")
+    else:
+        return True
+
+def PromedioNotas():
+    return (float(Nota1)+float(Nota2)+float(Nota3))/3    
+    
+print ("Ingrese las notas de los examenes (1-5):")
+
+while True:
+    Nota1=float(input("Matematicas: "))
+    NotaTemp=Nota1
+    DatoValido()
+    NotaTemp=0
+    Nota2=float(input("Sociales: "))
+    NotaTemp=Nota2
+    DatoValido()
+    NotaTemp=0
+    Nota3=float(input("Fisica: "))
+    NotaTemp=Nota3
+    DatoValido()
+    NotaTemp=0
+    print("El promedio de las notas es: ",PromedioNotas())
